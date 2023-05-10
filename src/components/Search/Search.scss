@@ -1,0 +1,15 @@
+.search {
+  padding-right: 5px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+  background-color: #fff;
+
+  &__input {
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+  }
+}
