@@ -1,0 +1,30 @@
+@import '../../styles/utils/vars';
+@import '../../styles/utils/mixins';
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 5px;
+  background-color: $primaryColor;
+
+  @include OnTablet {
+    flex-direction: row;
+    gap: 0px;
+  }
+
+  &__left {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__right {
+    width: 100%;
+
+    @include OnTablet {
+      width: 240px;
+    }
+  }
+}
