@@ -1,0 +1,57 @@
+@import '../../styles/utils/vars';
+@import '../../styles/utils/mixins';
+
+.notes {
+  width: 100%;
+}
+
+.note {
+  width: 100%;
+
+  &__btn {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    box-shadow: 1px 1px 0 $primaryColor;
+
+    &:hover,
+    &.active {
+      background-color: rgb(220, 220, 220);
+    }
+  }
+
+  &__title,
+  &__text {
+    font-weight: 600;
+    width: 70px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    @include OnTablet {
+      width: 150px;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    width: 65px;
+    
+    @include OnTablet {
+      width: 80px;
+    }
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+
+    
+    @include OnTablet {
+      flex-direction: row;
+    }
+  }
+}
