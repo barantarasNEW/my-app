@@ -1,6 +1,6 @@
 # **Notes**
 
-**[DEMO LINK](https://barantarasnew.github.io/React-Phone-Catalog/)**
+**[DEMO LINK](https://barantarasnew.github.io/my-app/)**
 
 ## **Technologies**
 + React.js
